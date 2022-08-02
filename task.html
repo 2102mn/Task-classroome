@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md bg-primary navbar-dark py-3 fixed-top" 
+    >
+      <div class="container">
+        <a href="#" class="navbar-brand text-light">Cars World</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#models" class="nav-link">Марки авто</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">О нашей компании</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-light text-dark p-5 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between mt-5">
+                <div>
+                    <h1>
+                    Автолюбители <br><span class="text-warning">Приветствуем вас!<span>
+                    </h1>
+
+                    <p class="lead my-4">
+                        Наибольшую опасность на дорогах представляет машина, которая едет быстрее, чем способен думать ее водитель.
+                    </p>
+
+                    <!-- Кнопка-триггер модального окна -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Проконсультироваться 
+  </button>
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Наши сотрудники свяжутся с вами </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Ваш контактный номер телефона:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Комментарии</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-primary">Отправить:</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                </div>
+
+                <img src="./images/rols.png" alt="error" class="w-50 d-none d-md-block img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center my-5">
+        <h2 class="title">Модели в наличии</h2>
+    </div>
+
+    <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+
+        <div class="carousel-inner" id="mentors">
+            <div class="carousel-item active text-center">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-light text-dark mb-4">
+                            <div class="card-body text-center">
+                                <img src="./images/camry.jpg" alt="error" class="w-75">
+                            </div>
+                            <h3 class="card-title">Toyota Camry</h3>
+                            <p class="card-text">Гибрид из США 🇺🇸 2021 год. Дистроник , датчик полосы , 3 режима езды
+                                Зарядка на тел.</p>
+                            <a href="#" class="btn btn-info">Детальнее</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-light text-dark mb-4">
+                            <div class="card-body text-center">
+                                <img src="./images/LX.jpg" alt="error" class="w-75">
+                            </div>
+                            <h3 class="card-title">Lexus LX 470</h3>
+                            <p class="card-text">Машина из США 🇺🇸 пригнана в 2013 г. Оформлена 2014. Машина в Отл сост не битая.</p>
+                            <a href="#" class="btn btn-info">Детальнее</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-light text-dark mb-4">
+                            <div class="card-body text-center">
+                                <img src="./images/G class.jpg" alt="error" class="w-75">
+                            </div>
+                            <h3 class="card-title">Mercedes-Benz G</h3>
+                            <p class="card-text">Машина куплена в Германии масло В 2012 г. 2 ключа 2 комплекта шин, xерный потолок.
+                                </p>
+                            <a href="#" class="btn btn-info">Детальнее</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-light text-dark mb-4">
+                            <div class="card-body text-center">
+                                <img src="./images/bmw.jpg" alt="error" class="w-75">
+                            </div>
+                            <h3 class="card-title">BMW X5 (F15) 30d</h3>
+                            <p class="card-text">2 ключа , 2 комплекта шин , В М- пакете Обслужена в БМВ -Центре Бишкек на Гарантии.</p>
+                            <a href="#" class="btn btn-info">Детальнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item text-center">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-light text-dark mb-4">
+                            <div class="card-body text-center">
+                                <img src="./images/ux.jpg" alt="error" class="w-75">
+                            </div>
+                            <h3 class="card-title">Lexus UX I 2.0</h3>
+                            <p class="card-text">Машина из США свеже пригнана оформлена. В шумоизоляции. Чёрный потолок Сост. Идеальное.</p>
+                            <a href="#" class="btn btn-info">Детальнее</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-light text-dark mb-4">
+                            <div class="card-body text-center">
+                                <img src="./images/LX 570.jpg" alt="error" class="w-75">
+                            </div>
+                            <h3 class="card-title">Lexus LX 570</h3>
+                            <p class="card-text">
+                                3 ключа, машина покрыта в броне пленку,
+                                установлены обесшумные подкрыльники колёс </p>
+                            <a href="#" class="btn btn-info">Детальнее</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-light text-dark mb-4">
+                            <div class="card-body text-center">
+                                <img src="./images/х6.jpg" alt="error" class="w-75">
+                            </div>
+                            <h3 class="card-title">BMW X6 III 3.0</h3>
+                            <p class="card-text">Машина пригнана из Кореи 2 ключа в Полной комплектации растаможена оформлена.</p>
+                            <a href="#" class="btn btn-info">Детальнее</a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-light text-dark mb-4">
+                            <div class="card-body text-center">
+                                <img src="./images/RX.jpg" alt="error" class="w-75">
+                            </div>
+                            <h3 class="card-title">Lexus RX IV 350 3.5 </h3>
+                            <p class="card-text">Свежепригнана не оформлена комплектация спорт, вложений не требует, чистый carfax.</p>
+                            <a href="#" class="btn btn-info">Детальнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"
+            aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon"
+            aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+
+        <div class="p-5" id="contacts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <h2 class="text-center mb-4">Контакты</h2>
+                        <ul class="list-group-flush lead">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Addres:</span> Erkindik bulvar 77
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Phone:</span> (555) 434 434
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Email:</span> carsworld@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="p-5 bg-primary text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">CARS WORLD &copy; 2022 Cars World</p>
+        </div>
+    </footer>
+    
+    
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
